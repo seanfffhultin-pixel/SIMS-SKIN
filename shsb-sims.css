@@ -1,0 +1,195 @@
+/* SHSB SIMS skin. Scoped to SIMS Student's Angular root. No scripts or remote assets. */
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  background: #f4f6fa !important;
+  color: #172534 !important;
+  font-size: 14px !important;
+}
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar { background: #fff !important; color: #172534 !important; border-bottom: 1px solid #dce4ec !important; box-shadow: 0 2px 12px #17253408 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .navigationbar-brand, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .nav-user-logged-in, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .nav-name, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .nav-user-dropdown { color: #172534 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar-bottom, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar-bottom a { background: #f4f6fa !important; color: #526374 !important; font-size: 12px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .main-view > .container, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-container { background: #f4f6fa !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu { background: #fff !important; border-right: 1px solid #dce4ec !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav > li { border: 0 !important; margin: 4px 8px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav > li > a { border-radius: 10px !important; color: #46586b !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .menu-text, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .child-text, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .icon { color: inherit !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav > li > a:hover, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav > li > a:focus, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav > li > a.active { background: #e6f3ee !important; color: #075d49 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid { max-width: 1440px !important; margin: 0 auto !important; padding: 24px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row { display: grid !important; grid-template-columns: repeat(6, minmax(0, 1fr)) !important; gap: 18px !important; margin: 0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row::before, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row::after { display: none !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row > .no-padding { float: none !important; width: auto !important; min-width: 0 !important; grid-column: span 2 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row > .no-padding:has(school-details-homepage-widget) { grid-column: 1 / -1 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .widget { height: 100% !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .menu-item-large { box-sizing: border-box !important; height: auto !important; min-height: 120px !important; margin: 0 !important; padding: 22px !important; border: 1px solid #dce4ec !important; border-radius: 18px !important; background: #fff !important; color: #172534 !important; box-shadow: 0 4px 18px #17253405 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .menu-item-large:hover { background: #fff !important; color: #172534 !important; border-color: #95b7aa !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-header.menu-header:hover { background-color: transparent !important; color: #172534 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-header, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .activity-icon-text { display: flex !important; align-items: center !important; flex-wrap: wrap !important; gap: 10px !important; height: auto !important; min-height: 38px !important; position: relative !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-header-icon, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget div.timetable-icon, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .activity-icon { position: relative !important; float: none !important; flex: 0 0 36px !important; padding: 0 !important; margin: 0 !important; font-size: 30px !important; line-height: 38px !important; color: #08735b !important; text-align: center !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-header-icon i { font-size: 30px !important; margin: 0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-title-text, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .activity-item-text { position: static !important; float: none !important; margin: 0 !important; padding: 0 !important; font-size: 19px !important; line-height: 1.4 !important; font-weight: 650 !important; letter-spacing: -.3px !important; color: #172534 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .planner-homepage-widget-day { font-size: 10px !important; line-height: 12px !important; top: 18px !important; left: 7px !important; width: 22px !important; color: #08735b !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage #messages-widget-message-count, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage #planner-widget-today, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-widget-to-do { position: static !important; float: none !important; margin: 0 0 0 auto !important; padding: 5px 9px !important; border-radius: 9px !important; background: #edf6f2 !important; color: #075d49 !important; font-size: 12px !important; line-height: 1.5 !important; font-weight: 600 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-body { margin: 16px 0 0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .messages-homepage-widget-item, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .planner-homepage-widget-item { display: flex !important; gap: 12px !important; justify-content: space-between !important; align-items: baseline !important; padding: 11px 0 !important; border-bottom: 1px solid #edf0f4 !important; font-size: 14px !important; line-height: 1.5 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .messages-homepage-widget-item:last-child, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item:last-child, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .planner-homepage-widget-item:last-child { border-bottom: 0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-title { display: block !important; max-width: none !important; min-width: 0 !important; white-space: normal !important; overflow: visible !important; overflow-wrap: anywhere !important; color: #273c4e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-message-widget-date, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-homework-widget-date, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-date { float: none !important; width: auto !important; flex-shrink: 0 !important; color: #627387 !important; white-space: nowrap !important; font-size: 12px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .messages-widget-unread { font-weight: 650 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .menu-item-large { min-height: 0 !important; padding: 22px 26px !important; background: #eaf4ef !important; border-color: #cde1d7 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .homepage-widget-body { margin: 0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .school-name { font-size: 22px !important; font-weight: 650 !important; line-height: 1.35 !important; letter-spacing: -.4px !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .school-contact-details { display: flex !important; flex-wrap: wrap !important; gap: 6px 20px !important; margin: 12px 0 0 10px !important; white-space: normal !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .school-contact-detail-item { margin: 0 !important; font-size: 13px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .school-contact-detail-item a { color: #305e51 !important; overflow-wrap: anywhere !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .icon { color: #4b7769 !important; font-size: 14px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .home-icon { font-size: 30px !important; }
+/* Keep SIMS's existing scrolling and master/detail panels intact. */
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] :is(#homeworkItems, #homework, #messages, #timetable) { background: #f4f6fa !important; color: #172534 !important; border-right: 1px solid #dce4ec !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-header, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-header button, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .subtitle-bar { background: #eaf4ef !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .day-header { background: #eaf4ef !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .day-header-title, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .day-header-date { color: #305e51 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-overdue-header { background: #fff0dd !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-overdue-header .day-header-title { color: #8b4208 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-item-content { background: #fff !important; color: #172534 !important; border-bottom: 1px solid #e4eaf0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-item-content.active { background: #e3f2eb !important; color: #134b3e !important; box-shadow: inset 3px 0 #08735b !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-item-content td.homeworkItems-item-description { white-space: normal !important; padding: 10px 8px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-second-row { line-height: 1.5 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homework .homework-detail-header-panel { background: #edf4f0 !important; color: #172534 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homework .overdue { background: #fff0dd !important; color: #8b4208 !important; border-radius: 5px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homework .handedIn, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homework .extended { background: #e3f2eb !important; color: #134b3e !important; border-radius: 5px !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #messages .item.active, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #timetable .timetable-item-content.active { background: #e3f2eb !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #timetable .day-header-title, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #timetable .day-header-date { color: #305e51 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #timetable .timetable-item-content { color: #172534 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #timetable .timetable-item-content.current { background: #e3f2eb !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] a:focus-visible, body[ng-app="studentApp"][ng-controller="IndexCtrl"] button:focus-visible, body[ng-app="studentApp"][ng-controller="IndexCtrl"] [tabindex]:focus-visible { outline: 3px solid #13785e !important; outline-offset: 2px !important; }
+@media (max-width: 1100px) {
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row > .no-padding { grid-column: span 1 !important; }
+}
+@media (max-width: 680px) {
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid { padding: 14px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row { grid-template-columns: minmax(0, 1fr) !important; gap: 12px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .menu-item-large { padding: 18px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .menu-item-large { padding: 20px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .school-name { font-size: 18px !important; }
+}
+
+/* Shared panels: keep SIMS's scroll geometry, disclosure controls and dialogs. */
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-window, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-window-wide, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-body, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .full-screen-detail { background-color: #f4f6fa !important; color: #172534 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .full-screen-detail { background-color: #fff !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-window, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-window-wide { border-right: 1px solid #dce4ec !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .day-header { background-color: #eaf4ef !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .day-header-title, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .day-header-date { color: #305e51 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #planner .calendar-item-content, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #conduct .conduct-item-content, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #conduct .conduct-item, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activities .item, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #assessment .assessment-item, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #reports .item { background-color: #fff !important; color: #273c4e !important; border-bottom: 1px solid #e4eaf0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #planner .calendar-item-content.active, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activities .item.active, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #assessment .assessment-item:hover, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #assessment .is-active { background-color: #e3f2eb !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #school-details, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #school-details a, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #school-diary .schoolDiaryItem, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #reminder, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #free-Form { color: #273c4e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #school-details .title, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #school-details .school-details .title { color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #school-details a { text-decoration: underline !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #free-Form .freeFormDetailItem .freeForm-detail-header-panel { background-color: #eaf4ef !important; color: #172534 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #free-Form .overdue { background-color: #fff0dd !important; color: #8b4208 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #free-Form .extended, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #free-Form .handedIn { background-color: #e3f2eb !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #planner .calendar-cancel-button, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #planner .calendar-set-button, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-cancel-button, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-set-button { background-color: #e3f2eb !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #planner #subtitlebar_filter.active, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems #subtitlebar_filter.active { background-color: #cde1d7 !important; color: #134b3e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activities input:checked + .slider, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems input:checked + .slider { background-color: #08735b !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #reportsWidget .doc .header, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #reportsWidget .doc .body { background-color: #cde1d7 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #reportsWidget .latest-report-text .latest-report-text-header { color: #305e51 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .mCSB_dragger_bar { background-color: #829b91 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .mCSB_draggerRail { background-color: #e4eae7 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-container { scrollbar-color: #829b91 #e4eae7 !important; }
+/* Match the existing hidden state even where the skin adds flex layouts. */
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .ng-hide:not(.ng-hide-animate) { display: none !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-completion { display: inline-flex !important; align-items: center !important; gap: 7px !important; padding: 5px 8px !important; margin: 4px 8px 4px 0 !important; border: 1px solid #b8cfc4 !important; border-radius: 8px !important; color: #134b3e !important; background: #edf6f2 !important; font: 12px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important; white-space: nowrap !important; cursor: pointer !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-completion input { appearance: auto !important; -webkit-appearance: checkbox !important; display: inline-block !important; width: 17px !important; height: 17px !important; margin: 0 !important; accent-color: #08735b !important; cursor: pointer !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-completion:has(input:disabled) { opacity: .65 !important; cursor: help !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-personally-done .homeworkItems-item-desc, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-personally-done > .homepage-widget-title, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-personally-done .homework-detail-header-panel > .header { text-decoration: line-through !important; color: #526374 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #shsb-personal-note { box-sizing: border-box !important; padding: 10px 12px !important; background: #edf6f2 !important; border-bottom: 1px solid #cde1d7 !important; color: #305e51 !important; font: 12px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important; white-space: normal !important; }
+/* Reserve space for the added note, retaining SIMS's nested scrolling. */
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .view-body:has(> #shsb-personal-note) { display: flex !important; flex-direction: column !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .view-body:has(> #shsb-personal-note) > .scroll-container { flex: 1 !important; min-height: 0 !important; height: auto !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .view-body:has(> #shsb-personal-note) > .subtitle-bar { flex-shrink: 0 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item { flex-wrap: wrap !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item > .shsb-completion { flex-basis: auto !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item > .homepage-widget-title { flex: 1 !important; }
+
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .activity-content, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activities .activities-header, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activities .activitiesheader, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activities .activitiesItems-row, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activityEvents .activities-icons, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activityEvents a.close, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activityEvents .activitiesItems-row, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #activityEvents .activity-content, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #assessment .assessment-no-data, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #assessment .assessment-header, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #assessmentResults .aspect-title, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #attendance .week-commencing, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #messages .messages-category-heading, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #reports .reports-category-heading, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #reportsWidget .doc .body, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #assessmentWidget .assessment-widget .carousel .carousel-item { color: #273c4e !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .step, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-body .step { color: #526374 !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .school-selector, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .school-selector table { background-color: #fff !important; color: #273c4e !important; border-color: #dce4ec !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homework .view-body:has(> #shsb-personal-note) { display: flex !important; flex-direction: column !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homework .view-body:has(> #shsb-personal-note) > .scroll-container { flex: 1 !important; min-height: 0 !important; height: auto !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #shsb-personal-note { flex-shrink: 0 !important; }
+
+
+/* Personal To do / Done views, retaining the original Angular elements. */
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-homework-filters { display: flex !important; gap: 8px !important; padding: 10px !important; flex-shrink: 0 !important; background: #f4f6fa !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-homework-filters button { min-height: 44px !important; padding: 8px 14px !important; border: 1px solid #cde1d7 !important; border-radius: 10px !important; background: #fff !important; color: #305e51 !important; font: 600 14px/1.4 system-ui !important; cursor: pointer !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-homework-filters button[aria-pressed="true"] { background: #075d49 !important; color: #fff !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-homework-empty { padding: 16px !important; color: #526374 !important; white-space: normal !important; }
+body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems [data-shsb-filter-hidden="true"], body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item[data-shsb-filter-hidden="true"], body[ng-app="studentApp"][ng-controller="IndexCtrl"] homework-homepage-widget .homework-homepage-widget-item[data-shsb-filter-hidden="true"], body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-homework-empty[hidden] { display: none !important; }
+
+/* Generated mobile layout */
+/* Phone layout. Keep SIMS's native horizontal detail navigation functional. */
+@media (max-width: 700px) {
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] { --shsb-pane-height: calc(100dvh - 100px - 30px - env(safe-area-inset-bottom, 0px)) !important; height: 100dvh !important; font-size: 15px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar { height: 100px !important; display: grid !important; grid-template-columns: minmax(0, 1fr) auto !important; grid-template-rows: 50px 50px !important; padding: 0 12px !important; margin: 0 !important; top: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .navigationbar-brand { height: 50px !important; padding: 0 !important; display: flex !important; align-items: center !important; font-size: 15px !important; float: none !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .navigationbar-brand .logo { width: 30px !important; height: 30px !important; padding: 3px !important; margin-right: 5px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .navigationbar-right { display: block !important; float: none !important; margin: 0 !important; min-width: 0 !important; align-self: center !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar .navigationbar-right:has(.school-selector) { grid-column: 1 / -1 !important; grid-row: 2 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .school-selector, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .school-selector table { max-width: none !important; width: 100% !important; min-height: 44px !important; font-size: 14px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .school-selector table { display: table !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .main-view > .container { padding-top: 100px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .main-view > .container:has(> .menu) { --shsb-pane-height: calc(100dvh - 100px - 56px - 30px - env(safe-area-inset-bottom, 0px)) !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu { float: none !important; width: 100% !important; height: 56px !important; margin-left: 0 !important; border: 0 !important; border-bottom: 1px solid #dce4ec !important; overflow-x: auto !important; overflow-y: hidden !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .mCustomScrollBox { max-height: none !important; height: auto !important; overflow: visible !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .mCSB_container { position: static !important; margin: 0 !important; transform: none !important; overflow: visible !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .mCSB_scrollTools { display: none !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #side_menu { display: flex !important; gap: 6px !important; width: max-content !important; padding: 6px 10px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav { flex: 0 0 auto !important; margin: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav > li { margin: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .nav > li > a { display: flex !important; align-items: center !important; gap: 5px !important; min-height: 44px !important; padding: 9px 12px !important; white-space: nowrap !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .menu-text, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .child-text { display: inline !important; font-size: 14px !important; margin: 0 !important; top: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .menu .icon { font-size: 18px !important; margin: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-container { width: 100% !important; height: var(--shsb-pane-height) !important; min-width: 0 !important; scroll-snap-type: x proximity !important; overscroll-behavior-x: contain !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .inline-view { width: 100% !important; min-width: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-window, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-window-wide { width: 100% !important; max-width: 100vw !important; height: var(--shsb-pane-height) !important; scroll-snap-align: start !important; border-right: 0 !important; white-space: normal !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-body { height: var(--shsb-pane-height) !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-body .scroll-container { height: var(--shsb-pane-height) !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-body .with-subtitle-bar { height: calc(var(--shsb-pane-height) - 44px) !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .empty-view { display: none !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .navigationbar-bottom { height: calc(30px + env(safe-area-inset-bottom, 0px)) !important; padding-bottom: env(safe-area-inset-bottom, 0px) !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-header, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-header button { height: 44px !important; line-height: 44px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .view-header button { min-width: 44px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .subtitle-bar { min-height: 44px !important; height: auto !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems #refresh { margin: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems #subtitlebar_refresh { display: inline-flex !important; align-items: center !important; min-height: 44px !important; padding: 0 14px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .day-header { height: auto !important; min-height: 44px !important; padding: 12px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .day-header-content { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; gap: 4px 10px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .day-header-date { position: static !important; margin: 0 !important; padding: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-item-content { margin: 6px 10px !important; border: 1px solid #dce4ec !important; border-radius: 14px !important; width: calc(100% - 20px) !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-item-content table { height: auto !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-item-content td.homeworkItems-item-description { padding: 12px !important; border-left: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-item-desc { display: block !important; white-space: normal !important; max-width: 100% !important; overflow-wrap: anywhere !important; font-size: 16px !important; line-height: 1.5 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homeworkItems .homeworkItems-second-row { font-size: 13px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-completion { min-height: 44px !important; box-sizing: border-box !important; padding: 10px 12px !important; font-size: 14px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .shsb-completion input { width: 20px !important; height: 20px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .homeworkDetailItem, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .freeFormDetailItem, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .schoolDiaryItem { padding: 14px !important; overflow-wrap: anywhere !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .homework-detail-header-panel { padding: 16px !important; border-radius: 14px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .homework-detail-header-panel .header { font-size: 21px !important; line-height: 1.35 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .full-screen-detail img, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .description img { max-width: 100% !important; height: auto !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .full-screen-detail input:not([type="checkbox"]):not([type="radio"]), body[ng-app="studentApp"][ng-controller="IndexCtrl"] .full-screen-detail textarea, body[ng-app="studentApp"][ng-controller="IndexCtrl"] .full-screen-detail select { font-size: 16px !important; max-width: 100% !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] .homework-submit-button { min-height: 44px !important; width: 100% !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid { padding: 12px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row { grid-template-columns: minmax(0, 1fr) !important; gap: 12px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .container-fluid > .row > .no-padding { grid-column: 1 / -1 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .menu-item-large { padding: 16px !important; min-height: 88px !important; border-radius: 16px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .menu-item-large { padding: 16px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .school-name { font-size: 17px !important; padding-left: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage school-details-homepage-widget .school-contact-details { margin-left: 0 !important; gap: 8px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-title-text { font-size: 18px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homepage-widget-body { margin-top: 12px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .messages-homepage-widget-item, body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .planner-homepage-widget-item { flex-wrap: wrap !important; gap: 4px 10px !important; min-height: 44px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item { display: grid !important; grid-template-columns: minmax(0, 1fr) auto !important; gap: 8px !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item > .shsb-completion { grid-column: 2 !important; grid-row: 1 / span 2 !important; margin: 0 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item > .homepage-widget-title { grid-column: 1 !important; grid-row: 1 !important; }
+ body[ng-app="studentApp"][ng-controller="IndexCtrl"] #homepage .homework-homepage-widget-item > .homepage-homework-widget-date { grid-column: 1 !important; grid-row: 2 !important; }
+}
