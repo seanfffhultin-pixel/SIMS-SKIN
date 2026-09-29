@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Install the SIMS skin</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6fa;color:#172534;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:760px;margin:64px auto;padding:0 24px}small{font-weight:650;letter-spacing:.1em;color:#08735b}h1{font-size:40px;line-height:1.15;letter-spacing:-1.5px;margin:14px 0}p{color:#526374}.card{background:#fff;border:1px solid #dce4ec;border-radius:20px;padding:26px;margin:26px 0}li{padding:6px 0}a{color:#075d49}a.button,button.button{border:0;cursor:pointer;font:inherit;display:inline-block;padding:12px 18px;border-radius:12px;background:#075d49;color:white;text-decoration:none;font-weight:600}a:focus-visible{outline:3px solid #13785e;outline-offset:4px}.links{display:flex;align-items:center;gap:20px;flex-wrap:wrap}code{font-size:14px}h2{font-size:20px;margin-top:0}@media(max-width:600px){main{margin-top:32px}h1{font-size:32px}.card{padding:20px}}
+</style></head><body><main>
+<small>SHSB · SIMS STUDENT · v0.5.0</small><h1>Your SIMS. A calmer look.</h1>
+<p>A phone-friendly layout with full-width pages, swipeable navigation and homework you can tick off for yourself. Your usual login and SIMS features stay in place.</p>
+<div class="links"><a class="button" href="shsb-sims.user.js" download>Download skin + homework ticks</a><button class="button" id="copy-script" type="button">Copy script</button><a href="preview.html">Preview the look →</a></div><p id="copy-status" role="status"></p>
+<section class="card"><h2>Chrome, Edge or Firefox</h2><ol>
+<li>Install <a href="https://www.tampermonkey.net/">Tampermonkey from its official browser-store link</a>.</li>
+<li>On Chrome/Edge, open the extension’s details and enable <strong>Allow User Scripts</strong> if shown. <a href="https://www.tampermonkey.net/faq.php?locale=en&amp;q=Q209">Tampermonkey’s instructions</a>.</li>
+<li>Click <strong>Copy script</strong> above.</li>
+<li>Open Tampermonkey → <strong>Create a new script</strong>. Replace the starter text with the copied script, then save.</li>
+<li>Open <a href="https://www.sims-student.co.uk/">SIMS Student</a> and reload it. Allow the extension to run on SIMS if prompted.</li>
+</ol></section>
+<section class="card"><h2>Safari: skin and homework ticks</h2><ol>
+<li>Install <a href="https://apps.apple.com/app/userscripts/id1463298887">Userscripts</a>, then enable it in Safari → Settings → Extensions.</li>
+<li>Open the Userscripts app and choose its scripts folder. Save the downloaded <code>shsb-sims.user.js</code> into that folder.</li>
+<li>Allow Userscripts access to <strong>www.sims-student.co.uk</strong>, then reload SIMS.</li>
+<li>If you previously installed the CSS-only skin, set Safari → Settings → Advanced → Style sheet to <strong>None Selected</strong>. The script includes the latest stylesheet.</li>
+</ol><p><a href="https://github.com/quoid/userscripts#usage">Userscripts setup help</a></p></section>
+<section class="card"><h2>Your personal homework list</h2><p>Use <strong>Mark done</strong> to remove a task from <strong>To do</strong>. Open the <strong>Done</strong> section to find it again. These sections filter the assignments SIMS has loaded in the current list; the dashboard only contains SIMS’s preview items. Untick it in Done to return it to To do. These ticks persist in this browser and are separated by school, student and assignment ID.</p><p>They do not hand in work or change SIMS’s overdue status. Use SIMS’s <strong>Submit for Marking</strong> when required. Ticks do not sync between browsers and are lost if you clear SIMS site data.</p><p>If SIMS cannot expose an assignment’s ID, its tick is disabled rather than saved against the wrong homework.</p></section>
+<details class="card"><summary>Safari: appearance only, without an extension</summary><p><a href="shsb-sims.css" download>Download the CSS-only skin</a>, save it somewhere permanent and select it in Safari → Settings → Advanced → Style sheet → Other…. This option cannot add homework ticks.</p></details>
+<section class="card"><h2>Update your phone to v0.5.0</h2><p>Download the latest script on your Mac and AirDrop it to your phone, or transfer it using iCloud Drive. In Files, replace <code>shsb-sims.user.js</code> in the folder selected by Userscripts. Keep just one copy enabled, then reload SIMS in Safari. Your saved homework ticks are preserved.</p><h2>Undo or update</h2><p>Disable the script in your extension and reload SIMS to restore the original appearance. To update, replace the saved script with the latest download. You can close this installer and stop the local app after installation.</p></section>
+<p>Styles cover the dashboard, homework, messages, calendar, timetable, activities, attendance, assessment, conduct, reports and school details. External services opened by SIMS keep their own appearance.</p>
+<p>The script uses information already loaded by SIMS and stores only assignment identifiers and completion flags locally. It makes no network requests and does not read your login tokens or password.</p>
+<p>Built against SIMS’s public templates and tested with example pages. Live account verification in each browser is still needed. If a page looks wrong, disable the script and share a screenshot.</p>
+</main><script>
+document.getElementById('copy-script').addEventListener('click',async()=>{
+ const status=document.getElementById('copy-status');
+ try{
+  const response=await fetch('shsb-sims.user.js');if(!response.ok)throw new Error('download');
+  await navigator.clipboard.writeText(await response.text());
+  status.textContent='Copied. Paste into your extension’s new-script editor and save.';
+ }catch{status.textContent='Copy unavailable here. Download the script, open it in a text editor and copy its contents instead.';}
+});
+</script></body></html>

@@ -1,0 +1,52 @@
+name: Publish SIMS setup page
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/sims-skin/**'
+      - 'skin/**'
+      - 'scripts/build-sims-skin.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/publish-skin.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run build:skin
+      - run: node --check public/sims-skin/shsb-sims.user.js
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/sims-skin
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish site
+        id: deployment
+        uses: actions/deploy-pages@v4
